@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typing Test</title>
+  <link rel="stylesheet" href="tstyle.css">
+</head>
+<body>
+    <div class="screen active" id="start-screen">
+        <h1>Typing Test</h1>
+        <button class="btn" id="start">Start Test</button>
+    </div>
+    <div class="screen" id="test-screen">
+        <h1>Typing Test</h1>
+        <div class="text-display" id="text-display"></div>
+        <textarea class="text-input" id="text-input" placeholder="Start typing..."></textarea>
+        <div class="stats">
+            <p>Time: <span id="time">00:00</span></p>
+            <p>WPM: <span id="wpm">0</span></p>
+        </div>
+        <div class="buttons">
+            <button class="btn restart" id="restart">Restart</button>
+            <button class="btn" id="back">Random</button>
+        </div>
+    </div>
+    <div class="screen" id="result-screen">
+        <h1>Test Complete</h1>
+        <div class="results">
+            <p>Words Per Minute: <span id="final-wpm">0</span></p>
+        </div>
+        <div class="buttons">
+            <button class="btn restart" id="restart-result">Restart</button>
+            <button class="btn" id="back-result">Random</button>
+        </div>
+    </div>
+    <script src="tscript.js"></script>
+</body>
+</html>
